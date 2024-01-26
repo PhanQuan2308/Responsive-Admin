@@ -1,11 +1,20 @@
 import React from "react";
 import "./App.scss";
-import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar/Sidebar";
+import MainDash from "./components/MainDash/MainDash";
+
 const App = () => {
   return (
-    <main>
-      <Navbar />
-    </main>
+    <div className="App">
+      <div className="AppGlass">
+        <div>
+          <Sidebar />
+        </div>
+        <div>
+          <MainDash />
+        </div>
+      </div>
+    </div>
   );
 };
 
